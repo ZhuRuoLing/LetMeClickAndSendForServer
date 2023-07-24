@@ -5,9 +5,9 @@
 	"name": "LetMeClickAndSendForServer",
 	"description": "A server only version of LetMeClickAndSend",
 	"authors": [
-		"ZhuRuoLing","optijava","Alex3236"
+		"ZhuRuoLing","Optijava","Alex3236"
 	],
-	"license": "WTFPL",
+	"license": "MIT",
 	"icon": "assets/test/icon.png",
 	"environment": "server",
 	"entrypoints": {
