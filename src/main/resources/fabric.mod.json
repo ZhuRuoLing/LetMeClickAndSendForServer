@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "lmcas_for_server",
+	"version": "${version}",
+	"name": "LetMeClickAndSendForServer",
+	"description": "A server only version of LetMeClickAndSend",
+	"authors": [
+		"ZhuRuoLing","optijava","Alex3236"
+	],
+	"license": "WTFPL",
+	"icon": "assets/test/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"server": [
+			"net.zhuruoling.lmcas.Mod"
+		]
+	},
+	"mixins": [
+		"click_and_send_server.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "*",
+		"java": "*"
+	}
+}
