@@ -24,7 +24,7 @@ public abstract class GameMessageS2CPacketMixin {
         int currentDepth = maxDepth - 1;
         if (currentDepth < 0) return text;
         if (s != null && s.getClickEvent() != null) {
-            if (s.getClickEvent().getAction() == ClickEvent.Action.RUN_COMMAND /*&& !s.getClickEvent().getValue().startsWith("/")*/) {
+            if (s.getClickEvent().getAction() == ClickEvent.Action.RUN_COMMAND && !s.getClickEvent().getValue().startsWith("/")) {
                 var val = "/" + SendCommand.command + " " + s.getClickEvent().getValue();
                 s = s.withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, val));
             }
